@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile 'com.google.errorprone:error_prone_ant:2.0.17'	
+
+    compile files('lib/cfparse.jar')
+    compile files('lib/cpl.jar')
+
+    testImplementation 'junit:junit:4.12'
+}
+
